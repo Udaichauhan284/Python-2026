@@ -99,3 +99,26 @@ print("divide: ", type(12/2)) #ans 6.0, type: float
 
 #Implict Type Converstion, Python automatically convert behind the scene
 print(12/4) #3.0
+
+now_name = "Udai Chauhan"
+now_age = 27
+print("Hello My Name is ", now_name, "and my age is", now_age) #this is one way
+print(f"Hello My Name is {now_name} and my age is {now_age}") #tihis is how we use f formated string, to have calculation in string only
+
+"""Taking Inputs
+But the main question is how to ask user for some
+information.
+-> For example there is a user and you want to ask the age of that user, how can you do so, it’s easy using
+-> Now the default data type of input is always string reason is simple you can store anything in string.
+-> You have to manually convert the data type of input statements.
+
+"""
+
+age = input("Enter Your Age ")
+print(f"This is your age {age} and typeof this var is {type(age)}") #so by default it will be String
+age = int(age)
+print("Now the type of age is ", type(age))
+
+#Take the number change the int now from Input
+your_number = int(input("Enter your lucky number "))
+print(f"This is your selected number {your_number} and typeof this var is {type(your_number)}")
