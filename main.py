@@ -98,12 +98,12 @@ print("divide: ", type(12/2)) #ans 6.0, type: float
 # We have 7 falsy value => false, 0, 0.0, "", (), [], {}
 
 #Implict Type Converstion, Python automatically convert behind the scene
-print(12/4) #3.0
+#print(12/4) #3.0
 
-now_name = "Udai Chauhan"
-now_age = 27
-print("Hello My Name is ", now_name, "and my age is", now_age) #this is one way
-print(f"Hello My Name is {now_name} and my age is {now_age}") #tihis is how we use f formated string, to have calculation in string only
+#now_name = "Udai Chauhan"
+#now_age = 27
+#print("Hello My Name is ", now_name, "and my age is", now_age) #this is one way
+#print(f"Hello My Name is {now_name} and my age is {now_age}") #tihis is how we use f formated string, to have calculation in string only
 
 """Taking Inputs
 But the main question is how to ask user for some
@@ -114,11 +114,116 @@ information.
 
 """
 
-age = input("Enter Your Age ")
-print(f"This is your age {age} and typeof this var is {type(age)}") #so by default it will be String
-age = int(age)
-print("Now the type of age is ", type(age))
+#age = input("Enter Your Age ")
+#print(f"This is your age {age} and typeof this var is {type(age)}") #so by default it will be String
+#age = int(age)
+#print("Now the type of age is ", type(age))
 
 #Take the number change the int now from Input
-your_number = int(input("Enter your lucky number "))
-print(f"This is your selected number {your_number} and typeof this var is {type(your_number)}")
+#your_number = int(input("Enter your lucky number "))
+#print(f"This is your selected number {your_number} and typeof this var is {type(your_number)}")
+
+
+"""Operators
+-> Arithmetic operators perform mathematical operations like
+    addition, subtraction, multiplication, division, etc
+-> There are 7 types of arithmetic operator.
+addition +
+subtraction -
+multiplication *
+division /
+Floor division //
+modulus %
+Exponentiation **
+"""
+a = 10
+b = 20
+print("Addition ", a+b)
+print("Substration ", a-b)
+print("Multiplication ", a*b)
+print("Division ", b/a, "type of this ", type(b/a))
+
+#Floor Division is help us to remove the float value after the division, or simply it will change to int
+print("Floor Division ", b//a, "type of this ", type(b//a))
+
+print("Exponentiation ", 5**2) #5pow2, 5^2 = 25
+
+print("Modulus ", 32%5) #this will give the reminder only 5*6=30, 2 left
+
+"""
+Assignment operators are used to assign values to variables.
+Python also provides compound assignment operators that
+perform operations like addition, subtraction, multiplication,
+etc
+A basic assignment operator is simple =.
+
+Compound assignment operator combines arithmetic
+operations with assignment
+But first you have to understand how things work when we
+reassign variables in python and also reassigning variables
+with addition, subtraction etc
+To understand watch the video carefully
+Using compound assignment operators the reassigning
+works better
++= Add and assigD
+-= Subtract and assigD
+*= Multiply and assignA
+/= Divide and assigD
+//= Floor divide and assigD
+%= modulus and assigD
+**= Exponentiation and assign
+"""
+assgn = 34 #simply assigning the 34 to variable
+
+#Compound
+a = 30
+a += 10
+a -= 10
+a *= 5
+a /= 6
+a //= 5
+print(a)
+a %= 2
+
+print(a)
+
+
+"""
+Comparison operators, also called relational operators, are
+used to compare two values. Comparison operators will always provide Boolean result that
+is True and False
+-> comparison operators are as follow
+== Equal t<
+!= Not Equal to3
+> Greater than3
+< Less than 3
+>= Greater than or equal t<
+<= Less than or equal t<
+Comparison operators will work with numbers but you can
+use them with strings as well. Strings will be comparing the Ascii values of string.
+"""
+# print(10 == 10)
+# print(10 != 10)
+# print(6 > 4) #greater, True
+# print(4 < 6) #lesser, True
+# print(10 >= 10)
+#print("A" > "B") #we can also compare string also in Python, compare the ASCII value, 65 > 66, false
+
+"""
+Logical operators in Python are used to combine multiple
+conditions and return a Boolean result (True or False)
+-> There are 3 types of logical operator3
+and - Return True if both condition are Tru\
+or - Return True if at least one condition is True
+not - Reverse the boolean value
+"""
+# print(123 > 100 and 34 == 34) #True
+# print(123 > 100 and 34 != 34) #False
+# print(1234 > 100 or 34 != 34) #True, why because one is True
+
+# print(not 12 == 12) #not True => False
+# print((456 == 456) != (235 == 236)) #True
+# print(12 < 10 or 45 == 56 or 69 > 70 or 15 != 13) #True
+# print(True and bool(0)) #False
+
+
