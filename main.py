@@ -227,3 +227,94 @@ not - Reverse the boolean value
 # print(True and bool(0)) #False
 
 
+"""
+-> Condition Statement
+
+if - Executes if the condition is True*
+5 if-else - Executes if True, another if Fals3
+5 if-elif-else - Checks multiple condition in sequence.
+
+"""
+#If condition, excute something if the condition is true
+# a = 9
+# if a > 10:
+#     print('Now A is greater than 10 means i am executing Task A') #see after colon this print start from after 5 space, this is indentation
+# else:
+#     print("Now a is not greater than 10 means i am executing Task B")
+
+#IF ELSE
+# money_given = int(input("Please Give me money: "))
+# if money_given > 10:
+#     print("Yeah Now I will buy the good ice creame")
+# else:
+#     print("Oh NO, I need to buy the little choco only")
+
+#Now if-elif-else
+# if money_given == 10:
+#     print("I will buy ChocoBar Icecream")
+# elif money_given == 20:
+#     print('I will buy cone butter stoch icecream')
+# else:
+#     print('I need to go with Mongo Dolly')
+
+
+#Q1. Accept two numbers and print the greatest between them.
+# num_one = int(input("Enter Number One "))
+# num_two = int(input("Enter Number Two "))
+# if num_one > num_two:
+#     print(f"Number One:{num_one} is greater than number two:{num_two}")
+# elif num_two > num_one:
+#     print(f"Number Two:{num_two} is greater than number one:{num_one}")
+# else:
+#    print("Both are the same")
+
+# Q2. Accept the gender from the user as char and print the respective greeting message
+#Ex - Good Morning Sir (on the basis of gender)
+# your_gen = input("Please Enter Only Char of Your Gender (M or F)")
+# if your_gen == 'M' or your_gen == 'm':
+#     print("Good Morning Sir")
+# elif your_gen == 'F' or your_gen == 'f':
+#     print("Good Morning Maam, Have a Beautiful Day")
+# else:
+#     print('Please enter M or F only')
+
+#Q3. Accept an integer and check whether it is an even number or odd.
+# enter_number = int(input("Enter Your Number "))
+# if enter_number%2 == 0:
+#     print("This is even number")
+# else:
+#     print('This is odd number')
+
+#Q5. Accept a year and check if it a leap year or not (google to find out what is a leap year)
+#century year 2000, 3000, 1900, should be modulu by 100 and 400
+# year = int(input("Enter Your Year"))
+# if year%100 == 0 and year%400 == 0:
+#     print('Its a Leap Year')
+# elif year%100 != 0 and year%4 == 0:
+#     print('Its a Leap Year')
+# else:
+#     print('Its a normal year')
+
+
+# take the input of temperature in celsiusX
+# @ Below 0°C → "Freezing Cold b
+# @ 0°C to 10°C → "Very Cold b
+# @ 10°C to 20°C → "Cold b
+# @ 20°C to 30°C → "Pleasant b
+# @ 30°C to 40°C → "Hot b
+# @ Above 40°C → "Very Hot "
+#temp = int(input("Enter the Temp in Cel: "))
+# if temp < 0:
+#     print('Freezing Cold')
+# elif temp >= 0 and temp <= 10:
+#     print('Very Cold')
+# elif temp >= 10 and temp <= 20:
+#     print('Cold')
+# elif temp >= 20 and temp <= 30:
+#     print('Pleasant Temp')
+# elif temp >= 30 and temp <= 40:
+#     print("Now its getting HOT")
+# elif temp >= 40:
+#     print("We get fucked!!, So HOTTTTT")
+# else:
+#     print('I dont know')
