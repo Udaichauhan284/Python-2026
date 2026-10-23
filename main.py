@@ -318,3 +318,258 @@ if - Executes if the condition is True*
 #     print("We get fucked!!, So HOTTTTT")
 # else:
 #     print('I dont know')
+
+
+"""
+-> LOOPS
+There are 2 types of loops in python. For and While loop.
+
+In first scenario you know the number of mugs to transfer
+from one bucket to another.
+>Here you know how many numbers of iteration you have to go through, like you have to transfer only 4 mugs. So when you know the number of iterations you will use aFOR loop.
+
+-> In the second scenario, you don't know how many mugs you need to transfer, but you do know the condition that determines when to stop
+So when you don’t know how many iteration you have to use but you know a condition that determines when to stop you will use loop. WHILE
+
+-> RANGE
+Before understanding for loops you should know how range
+function works
+->The range() function is used to generate a sequence of numbers, which is commonly used in loops
+Syntax of range function is simple range(start, stop, steps)
+you have 3 points from where you want to start, till where you want to stop and how many steps you want
+- If you don’t mention start point the default value will be 0 .
+- if you don’t mention the steps the default steps will be 1.
+- you have to mention the stop point otherwise the range function will not work.
+
+"""
+print("--------------------")
+#For Loop
+# for i in range(6):
+#     print(i) #Here i have just given the Stop(6), so i goes from 0 to 5, 6 is not included, because it start from 0
+# print("--------------------")
+# for i in range(1,6):
+#     print(i) #i have given the start 1 and stop is 6, and step is by default is 1, so it will goes from 1to5, 6 is not included
+
+# print("--------------------")
+#Now i am going reverse in Range, start16, need to 0 till 1, so stop0 and steps -1
+# for i in range(16, 0, -1):
+#     print(i)
+
+#Now I am going from start: -5 to stop: -16 and step -1
+# for i in range(-5,-16,-1):
+#     print(i)
+
+#Now i need a multiple of table of 5
+# for i in range(5, 51, 5):
+#     print(i)
+
+#Print the table of User Preference
+# n = int(input("Enter Your Number for which you want table "))
+# for i in range(n, (n*10)+1, n):
+#     print(i)
+
+
+"""
+Loops for strings work slightly differently. You can iterate
+through a string in two ways
+-> Using index values
+Iterating directly over the string
+Iterating using the index values, Now we know that index
+values are numbers and for numbers we again have to use
+range function.
+"""
+
+# a = "Udai Chauhan"
+# print(len(a))
+# for i in range(len(a)):
+#     print("The Char of a: ", a[i])
+
+
+#Second way is simpler we can directly iterate but using this method will give you the direct
+# access to the characters instead of index values.
+a = "Nature"
+#Diretly accessing the char of a string, rather than there index
+# for char in a:
+#     print(char)
+
+"""
+The break statement in Python is used to exit a loop
+prematurely when a certain condition is met. Once break is
+encountered, the loop stops immediately, and control moves
+to the next statement after the loop
+
+A The Continue statement skips one of the iteration and rest of
+the iterations will run for understanding lets say you will not
+run the 16th lap but all other lap will be there.4
+"""
+# for i in range(1, 21):
+#     print(i)
+#     if i == 10:
+#         break
+
+### OR
+# -> This loop break when i will be 11, so it will goes from 1 to 10
+# for i in range(1, 21):
+#     if i == 11:
+#         break
+#     else:
+#         print(i)
+
+### Now use Continue, it will skip that one condition
+# for i in range(1,21):
+#     if i == 13:
+#         continue
+#     else:
+#         print(i)
+
+"""
+You have seen the else statement used with if, but it can also
+be used with loops. When else is used with a loop, it only
+executes if the loop completes without encountering a break
+statement. If break is executed, the else block will not run.
+"""
+# In this example, if break run, so below else will not run, here break will run
+# for i in range(1,6):
+#     if i == 3:
+#         print("Break will run here")
+#         break
+#     else:
+#         print(i)
+# else:
+#     print("Break doesnt run, so this else will run")
+
+#In this exmaple, i will not let break to run, so below else will run
+# for i in range(1,6):
+#     if i == 7:
+#         print("Break will run here")
+#         break
+#     else:
+#         print(i)
+# else:
+#     print("Break doesnt run, so this else will run")
+
+
+### QUESTION
+#Accept an integer and Print hello world n times
+# num = int(input("Enter the Number: "))
+# for i in range(num):
+#     print(f"{i+1} Hello World Sir")
+
+#Print natural number up to n
+# num = int(input("Enter The Range "))
+# for i in range(1, num+1):
+#     print(f"{i}"
+
+#Reverse for loop. Print n to 1
+# n = int(input("Enter the num"))
+# for i in range(n,0,-1):
+#     print(i)
+
+
+#Take a number as input and print its table
+# num = int(input("Enter the number for which you want table "))
+# for i in range(1, 11):
+#     print(f"{num} * {i} = {num * i}")
+
+# ## OR, i want number only of table
+# for i in range(num, (num*10)+1, num):
+#     print(i)
+
+
+#Sum up to n terms
+# n = int(input("Enter the N "))
+# sum = 0
+# for i in range(1,n+1):
+#     sum += i
+# print(sum)
+
+#Q. Factorial of a number
+# n = int(input("Enter the N "))
+# fact = 1
+# for i in range(1, n+1):
+#     fact *= i
+# print("your fact is ", fact)
+
+#Print the sum of all even & odd numbers in a range separately
+# n = int(input("Enter your range "))
+# sumEven = 0
+# sumOdd = 0
+# for i in range(1, n+1):
+#     if i%2 == 0:
+#         sumEven += i
+#     else:
+#         sumOdd += i
+# print(f"The sum of Even {sumEven} and odd sum {sumOdd}")
+
+#Print all the factors of a number
+# num = int(input("Enter your number "))
+# for i in range(1, num+1):
+#     if num%i == 0:
+#         print("This is your factor: ", i)
+
+#Accept a number and check if it a perfect number or not.
+# A number whose sum of factors is equal to the number itself
+# Ex - 6 = 1, 2, 3 = 6
+# num = int(input("Enter Your Number "))
+# sum = 0
+# for i in range(1, num): #here i dont want num, only want factor before main num
+#     if num%i == 0:
+#         sum += i
+
+# if(sum == num):
+#     print("This is perfect number")
+# else:
+#     print("This is not a perfect number")
+
+
+#Check wether the number is prime or not
+# num = int(input("Enter your number to get checked"))
+# count = 0
+# for i in range(1,num+1):
+#     if num%i == 0:
+#         count += 1
+
+# if count == 2:
+#     print("this is prime number")
+# else:
+#     print("this is non prime number")
+
+#Reverse a string without using in build functions.4
+#str = "Udai Chauhan"
+# print(str[::-1]) #no need of start and stop, just give -1 step
+# newStr = ''
+# for i in range(len(str)-1, -1, -1): #start lenofStr 4, so index will be 3, so 4-1, need to go till 0, so need to give stop -1, step -1
+#     newStr += str[i]
+# print("This is from for loop" , newStr)
+
+
+#Check string is Pallindrome or not
+# str = "nitin"
+# newStr = ''
+# for i in range(len(str)-1, -1, -1):
+#     newStr += str[i]
+# if(newStr == str):
+#     print("This is palindrome string")
+# else:
+#     print("This is not palindrome string")
+
+###Count all letters, digits, and special symbols from a given string
+# Given: str1 = "P@#yn26at^&i5ve"
+# Expected Outcome:
+# Total counts of chars, digits, and symbols
+# Chars = 8 for checking this we have isAlpha
+# Digits = 3 for this python have isDig
+# Symbol = 4
+
+str = "P@#yn26at^&i5ve"
+char=0
+dig=0
+symbol=0
+for ch in str:
+    if ch.isdigit():
+        dig += 1
+    elif ch.isalpha():
+        char += 1
+    else:
+        symbol += 1
+print(f"This is count of char: {char}\nthis is count for dig: {dig}\nthis is count for symbol: {symbol}")
