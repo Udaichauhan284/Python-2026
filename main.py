@@ -37,3 +37,65 @@ isAllowed = True #boolean data type
 isAllowed = False
 print(isAllowed) 
 print("Type of Boolean ", type(isAllowed))
+
+""" --> Strings <-- 
+-> You know what strings are but you must also know string
+take more space than other data types like int, float etc
+-> This happens because String stores every character with
+their own Unicode is a universal character encoding standard that
+assigns a unique number (code point) to every character,
+regardless of language Like “A” unicode is 65 and “ ” this emoji unicode is 128522,
+you can check them by using ord() function in python and
+convert them back using chr() function.
+"""
+char_var = "a"
+print(ord(char_var))
+unicode_var = 65
+print(chr(unicode_var))
+
+""" -> String Indexing 
+
+You must have thought there are so many characters in a
+string but can you access everyone. 
+-> Yes thats possible using indexing. Indexing starts from 0 and
+goes till the number of characters you have. 
+-> There is negative indexing as well and it starts from -1, but
+the starting position is from the back of the string
+: eg - a = “Hello” print(a[0]) ==> output - “H
+
+: eg - a = “Hello” print(a[-1]) ==> output - “o”
+
+"""
+name = "Udai Chauhan"
+print("First Char of letter: " , name[0])
+print("Thrid Char of letter: ", name[2])
+print('Last Char of letter: ', name[-1])
+print('Second Last char of letter: ', name[-2])
+
+"""
+-> String Slicing
+
+Slicing means cutting out a slice from string and this is also
+done using index values
+-> So here we have start , stop and steps position and keep a
+note if we use stop at 4 it will slice till 3 only.
+"""
+name = "Udai Chauhan"
+print("First name:" , name[0:4:1]) #start: end: steps
+print("First name something different way:", name[0:4:]) #we can left steps, by default it will be 1
+print("Second Name:", name[5::1]) #if we want till last, we can skip the end value
+print("Second Name some other way: ", name[5::]) # we can leave both blank by defalt it will goes till last and one steps
+
+# -> Type Converstion
+a = 12
+print(type(a))
+a = str(a)
+print(type(a))
+
+b = 12
+print("divide: ", type(12/2)) #ans 6.0, type: float
+
+# We have 7 falsy value => false, 0, 0.0, "", (), [], {}
+
+#Implict Type Converstion, Python automatically convert behind the scene
+print(12/4) #3.0
