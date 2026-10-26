@@ -573,3 +573,73 @@ for ch in str:
     else:
         symbol += 1
 print(f"This is count of char: {char}\nthis is count for dig: {dig}\nthis is count for symbol: {symbol}")
+
+print("---------------------------------------------")
+"""
+While Loop
+You have previously taken the information of loops and you
+also know conditional statements it is going to be easy for
+you to understand this now
+The while loop repeats a block of code as long as a condition
+is True. It is useful when the number of iterations is unknown
+before execution
+
+while condition:
+    #excute your lines
+""" 
+# a = 1
+# while a <= 10:
+#     print("This is a: ", a)
+#     a += 1
+
+#Qus: Separate each digit of a number and print it on the new line
+# user_num = int(input("Enter your number: "))
+# while user_num > 0:
+#     rem = user_num%10
+#     print(rem)
+#     user_num //= 10
+
+
+#Ques: Accept a number and print its reverse
+# your_num = int(input("Enter your number: "))
+# rev_num = 0
+# while your_num != 0:
+#     rem = your_num%10
+#     rev_num = rev_num*10+rem
+#     your_num //= 10
+# print("Reverse Number: ", rev_num)
+
+#Ques: Accept a number and check if it is a pallindromic number (If number and its reverse are equal)
+# your_num = int(input("Enter your number to get checked "))
+# rev_num = 0
+# copy_num = your_num
+# while copy_num > 0:
+#     rem = copy_num % 10
+#     rev_num = rev_num*10 + rem
+#     copy_num //= 10
+# if your_num == rev_num:
+#     print("This is palindromic Number")
+# else:
+#     print("Nope this is not palindrome number")
+
+#Ques: Create a random number guessing game with python.
+#new to import random libary from Pythom
+import random
+num = random.randint(1,10) #random number from 1 to 10
+tries = 0 #this is for taking count of tries your take to guess the number
+while True:
+    guess = int(input("Guess the Number, Enter between 1 to 10: "))
+
+    if guess == num:
+        tries += 1 #try will increase
+        print(f"You guessed the Right Number, Your tries are {tries}")
+        break #come out of the loop
+    elif guess > num:
+        tries += 1
+        print("Please Guess Little Low")
+    elif guess < num:
+        tries +=1 
+        print("Please Guess Little High")
+    else:
+        tries +=1
+        print("Your are wrong")
